@@ -1,10 +1,17 @@
 import React from 'react';
 // import '../../sass/layout/_loginPage.scss'
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/Union.png';
 import logoText from '../../assets/lendsqr.svg';
 import welcomeImg from '../../assets/pablo-sign-in 1.png';
 
 const Login = () => {
+
+  const Navigate = useNavigate();
+  
+  const loginUser = () => {
+    Navigate('/dashboard');
+  } 
   return (
     <div id='login_page' className=''>
       <div className='logo_Wraper'>
@@ -31,7 +38,7 @@ const Login = () => {
             </div>
             <button className='reset_password'>forgot password ?</button >
 
-            <button className='loginBtn'> log in </button>
+            <button  onClick={loginUser} className='loginBtn'> log in </button>
           </form>
         </div>
       </div>
