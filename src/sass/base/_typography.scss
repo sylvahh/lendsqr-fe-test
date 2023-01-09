@@ -1,0 +1,63 @@
+//dash board font 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$dashbord_font-family: 'Work Sans', sans-serif;  
+
+@font-face {
+    font-family: "Login-font_regular";   
+    src: local("AvenirNextLTPr0"),
+      url("../../fonts/avenir-next/AvenirNextLTPro-Regular.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Login-font_bold";  
+    src: local("AvenirNextLTPr0"),
+      url("../../fonts/avenir-next/AvenirNextLTPro-Bold.otf") format("truetype");
+  }
+
+//sidebar typography 
+$sb-font-size: 16px;
+$sb-font-weight: 400;
+$sb-font-height: 19px; // line-height 
+
+// dash board hero text 
+$hero-font-size: 24px;
+$hero-font-weight: 500;
+$hero-font-height: 28px;
+
+// data table typography 
+$dt-base-size: 14px;
+$dt-base-weight: 400;
+$dt-base-height: 16px; // line-height 
+
+$dt-header-size : 12px;  //data table header 
+$dt-header-weight: 600;
+$dt-header-height: 14px;
+
+
+
+
+// user details typography
+
+$ud-hero-size: 22px;
+$ud-hero-weight: $hero-font-weight;
+$ud-hero-height: 26px;
+
+
+
+$ud_Link_size: $sb-font-size; // user details links
+$ud_Link_weight: $sb-font-weight;
+$ud_link_height: $sb-font-height;
+
+$ud_info_headers-size: $sb-font-size; // user info headers 
+$ud_info_headers-weight: $hero-font-weight;
+$ud_info_headers-height: $sb-font-height;
+
+$ud_info_base-size: $dt-header-size ; // base text for user details information
+$ud_info_base-weight: $dt-base-weight ;
+$ud_info_base-height: $dt-header-height;
+
+
+
+
