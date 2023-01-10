@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from '../assets/Union.png';
 import logoText from '../assets/lendsqr.svg';
-import notification from '../assets/Vector.png';
+import notification from '../assets/notification.png';
 import userPhoto from '../assets/image 4.png';
 import searchIcon from '../assets/search-icon.svg';
-import dropdownBtn from '../assets/Vector 1.png';
+import dropdownBtn from '../assets/Vector-option.png';
 import menuIcon from '../assets/menu.svg';
 
 

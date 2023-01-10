@@ -7,7 +7,7 @@ const UserDashboard = () => {
       
       <DashboardHeader />
       {/* <main> */}
-        <div id='dashboard' >
+        <div id='dashboard_body' >
           hello
         </div>
       {/* </main> */}

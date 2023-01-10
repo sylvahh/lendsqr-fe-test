@@ -3,6 +3,24 @@
 
 
 
+
+
+
+
+@media (min-width: 992px) {
+    #dashboard_body {
+      width: calc(80%);
+      margin-left: 20%;
+      /* z-index: 10; */
+      /* background-image: url(assets/bg-dark5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: $primary-color;
+    }
+   
+  }
+
 // #dashboard_header {
 //     display: flex;
   

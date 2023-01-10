@@ -1,15 +1,17 @@
 @use '../index' as *;
 
 #dashboard_header {
-  margin-top: 0px !important;
+  margin:auto ;
   // display: flex;
   // width: 100%;
+  max-width: 1300px;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   font-family: $dashbord_font-family;
 
-  padding: 1rem;
+  padding: 1rem auto;
 
-  // background: $primary-color;
+  background: white;
+  // width: 100%;
   .header_wraper {
     display: flex;
     flex-direction: row;
