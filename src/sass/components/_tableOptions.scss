@@ -1,16 +1,18 @@
 @use '../index' as *;
 
 #table-options {
-  width: calc(15%);
+  width: calc(14%);
   box-sizing: border-box;
   background: rgb(255, 255, 255);
   position: absolute;
   right: 1%;
   z-index: 100;
-
+display: none;
   border: 1px solid rgba(84, 95, 125, 0.04);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
+
+  margin: 10px auto;
 
   .table-options_wraper {
     // background: rgb(29, 28, 28) !important;
@@ -22,7 +24,7 @@
 
     .options {
       display: flex;
-
+justify-content: center;
       align-items: center;
 
       gap: 10px;
@@ -39,4 +41,8 @@
       }
     }
   }
+}
+.open_options{
+  display: block;
+  width: 1000px;
 }

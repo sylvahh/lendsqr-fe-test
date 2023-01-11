@@ -10,95 +10,104 @@
 
   font-family: $dashbord_font-family;
   color: $dt-text-color;
-  overflow-x: auto;
   margin-top: 1.8rem;
   padding: 1.5rem;
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    // padding: 1rem;
-    // border-collapse: collapse;
-    th {
-      // display: flex;
-      // flex-direction: row;
-      // align-items: center;
-      text-align: justify;
-      // margin-bottom: 2rem;
+  
+  .table_wraper{
+      overflow-x: auto;
+ 
+// width: 100%;
+      table {
+        width: 1037px;
+        border-collapse: collapse;
 
-      font-size: $dt-header-size;
-      font-weight: $dt-header-weight;
-      line-height: $dt-header-height;
-      text-transform: capitalize;
-
-      button {
-        border: none;
-        background: none;
-        cursor: pointer;
-
-        img {
-          vertical-align: sub;
-          height: 16px;
-          width: 16px;
+        @media only screen and (min-width: 900px) {
+          width: 100%;
         }
-      }
-    }
-
-    tr {
-        position: relative;
-    }
-    td {
-
-        // position: relative;
-      //    margin: 1rem;
-      //   @include typography(dt-base-typo);
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      font-size: $dt-base-size;
-      font-weight: $dt-base-weight;
-      line-height: $dt-base-height;
-      cursor: pointer;
-      border-bottom: 1px solid rgba(33, 63, 125, 0.1);
-
-      button {
-        color: $dt-text-color;
-        border: none;
-        background: none;
-        cursor: pointer;
-      }
-    }
-    .status_active {
-      @include status(active);
-    }
-
-    .status_inactive {
-      @include status(inactive);
-    }
-
-    .status_pending {
-      @include status(pending);
-    }
-    .status_blacklist {
-      @include status(blacklist);
-    }
-
-    // .option-cell{
-    //     position: relative;
-    // }
-    .option_btn{
-
-        img {
-            vertical-align: sub;
-            height: 16px;
-            width: 16px;
+        // padding: 1rem;
+        // border-collapse: collapse;
+        th {
+          // display: flex;
+          // flex-direction: row;
+          // align-items: center;
+          text-align: justify;
+          // margin-bottom: 2rem;
+    
+          font-size: $dt-header-size;
+          font-weight: $dt-header-weight;
+          line-height: $dt-header-height;
+          text-transform: capitalize;
+    
+          button {
+            border: none;
+            background: none;
+            cursor: pointer;
+    
+            img {
+              vertical-align: sub;
+              height: 16px;
+              width: 16px;
+            }
           }
-    }
-
-
-    // hr {
-        //     font-size: xx-large;
+        }
+    
+        tr {
+            position: relative;
+        }
+        td {
+    
+            // position: relative;
+          //    margin: 1rem;
+          //   @include typography(dt-base-typo);
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          font-size: $dt-base-size;
+          font-weight: $dt-base-weight;
+          line-height: $dt-base-height;
+          cursor: pointer;
+          border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+    
+          button {
+            color: $dt-text-color;
+            border: none;
+            background: none;
+            cursor: pointer;
+          }
+        }
+        .status_active {
+          @include status(active);
+        }
+    
+        .status_inactive {
+          @include status(inactive);
+        }
+    
+        .status_pending {
+          @include status(pending);
+        }
+        .status_blacklist {
+          @include status(blacklist);
+        }
+    
+        // .option-cell{
+        //     position: relative;
         // }
-    }
+        .option_btn{
+    
+            img {
+                vertical-align: sub;
+                height: 16px;
+                width: 16px;
+              }
+        }
+    
+    
+        // hr {
+            //     font-size: xx-large;
+            // }
+        }
+  }
     .td_pigment{
         display: flex;
         flex-direction: row;
@@ -106,22 +115,58 @@
         align-items: center;
         margin-top: 1rem;
 
+        width: 100%;
+
+       .td_pigment_showing{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          @media only screen and (min-width: 900px) {
+          //  display: block;
+          flex-direction: row;
+          gap: 10px;
+          }
+        }
+
+        .td_pigment_pages{
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          gap: 5px;
+          width: 100%;
+          // text-align: right;
+
+          @media only screen and (min-width: 900px) {
+            gap: 10px;
+          }
+        }
         span {
-            margin: auto 5px;
+            // margin: auto 5px;
         }
 
         select {
-            padding: 5px 8px;
+            padding: 2px ;
             border: none;
             border-radius: 4px;
             background: rgba(33, 63, 125, 0.1);
 
+            @media only screen and (min-width: 900px) {
+              padding: 5px 8px;
+            }
+
         }
         button {
-            padding: 5px 8px;
+            // padding: 5px;
             border: none;
             border-radius: 4px;
             background: rgba(33, 63, 125, 0.1);
+             padding: 5px 8px;
+
+             @media only screen and (min-width: 900px) {
+              // padding: 5px 8px;
+            }
         }
     }
 
@@ -154,5 +199,11 @@
   //     display: flex;
   //     gap: 6rem;
   //     // justify-content: space-between;
+
+
   //   }
+
+  .table_wraper::-webkit-scrollbar {
+    width: 0px;
+  }
 }

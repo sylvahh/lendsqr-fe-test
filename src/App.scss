@@ -9,7 +9,22 @@
 @use './sass/components/dataFrom';
 @use './sass/components/tableOptions';
 @use './sass/layout/userDashboard';
+@use './sass/layout/userDetails';
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+// body{
+//   background: #e5e5e53f;
+// box-sizing: border-box;
+// }
+
+// .app{
+//     position: relative;
+// }
 // @use './sass/layout/dasboardHeader'
 // @use './sass/abstract/variables';
 

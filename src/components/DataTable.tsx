@@ -6,8 +6,31 @@ import nextbtn from '../assets/next btn.png';
 import prevbtn from '../assets/prev btn.png';
 import DataForm from './DataForm';
 import TableOptions from './TableOptions';
+import { toggler } from './utilities';
 
 const DataTable = () => {
+    let tableOptions = document.getElementById('table-options') as HTMLDivElement;
+    const checkDisplay = (): void  => {
+        // toggler('table-options', 'block')
+        // tableOptions === 'block' && tableOptions = 'none'
+        if (tableOptions !== null) {
+            tableOptions.classList.toggle('open_options')
+        }
+        // else if (tableOptions !== null && tableOptions.style.display === 'block') {
+        //     tableOptions.style.display = 'none';
+        // }
+
+        // if (tableOptions !== null) {
+        //     if (tableOptions.style.display !== 'block') {
+        //         console.log('no')
+        //         console.log(tableOptions.style.display)
+        //     }
+        // }
+
+    }
+    
+    // console.log(tableOptions?.style.display)
+   
   return (
     <div id='data_table'>
           <div className='table_wraper'>
@@ -15,12 +38,12 @@ const DataTable = () => {
               {/* <TableOptions/> */}
         <table>
           <tr>
-            <th>organization <button><img src={filterIcon} alt="filter_icon"/></button></th>
-            <th>Username <button><img src={filterIcon} alt="filter_icon"/></button></th>
-                      <th>Email <button><img src={filterIcon} alt="filter_icon"/></button></th>
-                      <th> Phone number <button><img src={filterIcon} alt="filter_icon"/></button></th>
-                      <th>Date joined <button><img src={filterIcon} alt="filter_icon"/></button></th>
-                      <th>Status <button><img src={filterIcon} alt="filter_icon" /></button></th>
+            <th>organization <button  onClick={() => toggler('data-form', 'block')} ><img src={filterIcon} alt="filter_icon"/></button></th>
+            <th>Username <button  onClick={() => toggler('data-form', 'block')} ><img src={filterIcon} alt="filter_icon"/></button></th>
+                      <th>Email <button  onClick={() => toggler('data-form', 'block')}><img src={filterIcon} alt="filter_icon"/></button></th>
+                      <th> Phone number <button  onClick={() => toggler('data-form', 'block')}><img src={filterIcon} alt="filter_icon"/></button></th>
+                      <th>Date joined <button  onClick={() => toggler('data-form', 'block')}><img src={filterIcon} alt="filter_icon"/></button></th>
+                      <th>Status <button  onClick={() => toggler('data-form', 'block')}><img src={filterIcon} alt="filter_icon" /></button></th>
                       {/* <th> hh</th> */}
           </tr>
                   <tr className='table_data'>
@@ -31,7 +54,7 @@ const DataTable = () => {
               <td><button>08078903721</button></td>
             <td><button>May 15, 2020 10:00 AM</button></td>
                       <td><button className='status_inactive'>Inactive  </button></td>
-                      <td className='option-cell'><button className='option_btn'><img src={optionIcon} alt="" /> </button> <TableOptions/> </td>
+                      <td className='option-cell'><button onClick={ () => toggler('table-options', 'block') } className='option_btn close_option'><img src={optionIcon} alt="" /> </button> <TableOptions/> </td>
                       
                       {/* <hr /> */}
                   </tr>
@@ -49,9 +72,14 @@ const DataTable = () => {
          
               </table>
               
-              <div className="td_pigment">
+              
+
+    
+          </div>
+          <div className="td_pigment">
+                  <div  className='td_pigment_showing'>
                   <div>
-                      <span>Showing </span>
+                  <span>Showing </span>
                       <select name="" id="">
                           <option value="">
                               10
@@ -66,10 +94,11 @@ const DataTable = () => {
                               100
                           </option>
                       </select>
+                  </div>     
                       <span>out of 100</span>
                   </div>
 
-                  <div>
+                  <div className='td_pigment_pages'>
                       <button>
                           
                       <img src={prevbtn} alt="" />
@@ -84,26 +113,6 @@ const DataTable = () => {
                       </button>
                   </div>
               </div>
-
-        {/* <div className='table_headers'>
-          <span>organization <button><img src={filterIcon} alt="filter_icon"/></button></span>
-          <span>Username <button><img src={filterIcon} alt="filter_icon"/></button></span>
-          <span>Email <button><img src={filterIcon} alt="filter_icon"/></button></span>
-          <span> Phone number <button><img src={filterIcon} alt="filter_icon"/></button></span>
-          <span>Date joined <button><img src={filterIcon} alt="filter_icon"/></button></span>
-          <span>Status <button><img src={filterIcon} alt="filter_icon"/></button></span>
-        </div>
-        <div className='table_data_wraper'>
-          <button className='table_data'>
-            <span>Lendsqr</span>
-            <span>Adedeji</span>
-            <span>adedeji@lendsqr.com</span>
-            <span>08078903721</span>
-            <span>May 15, 2020 10:00 AM</span>
-            <span>Inactive</span>
-          </button>
-        </div> */}
-      </div>
     </div>
   );
 };

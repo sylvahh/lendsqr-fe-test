@@ -2,8 +2,9 @@
 
 #data-form {
   font-family: $dashbord_font-family;
-  width: calc(25%);
+  width: calc(75%);
   height: calc(100%);
+  display: none;
 
   box-sizing: border-box;
   //   float: left;
@@ -16,6 +17,10 @@
   border-radius: 4px;
   overflow: auto;
   z-index: 100;
+
+  @media only screen and (min-width: 900px) {
+    width: calc(25%);
+  }
 
   .data-form_wraper {
     form {
