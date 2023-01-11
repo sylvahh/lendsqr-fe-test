@@ -1,12 +1,17 @@
 // @charset "UTF-8";
 // @use './sass/components/'
+// @use './sass/index' as *;
+@use './sass/abstract/mixins';
 @use './sass/layout/loginPage';
 @use './sass/components/dashboardheader';
 @use './sass/components/sidebar';
+@use './sass/components/dataTable';
+@use './sass/components/dataFrom';
+@use './sass/components/tableOptions';
 @use './sass/layout/userDashboard';
+
 // @use './sass/layout/dasboardHeader'
 // @use './sass/abstract/variables';
-
 
 // @use url('./sass/abstract/_variables.scss');
 // @use url('./sass/base/_typography.scss');
@@ -20,4 +25,3 @@
 // body{
 //   background-color: $maincolor;
 // }
-

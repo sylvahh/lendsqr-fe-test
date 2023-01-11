@@ -1,0 +1,42 @@
+@use '../index' as *;
+
+#table-options {
+  width: calc(15%);
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  right: 1%;
+  z-index: 100;
+
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+
+  .table-options_wraper {
+    // background: rgb(29, 28, 28) !important;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0.1rem;
+
+    .options {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      // width: 100%;
+      text-transform: capitalize;
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #545f7d;
+      }
+    }
+  }
+}

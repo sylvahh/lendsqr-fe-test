@@ -23,7 +23,7 @@
       flex-direction: row;
       gap: 10px;
       width: 100%;
-      flex-basis: 70%;
+      flex-basis: 60%;
     }
     .header_logo {
       height: 20.84px;
@@ -109,6 +109,7 @@
       }
       a {
         display: none;
+        // font-family: $roboto_font-family;
         text-align: left;
         font-weight: 400;
         font-size: 16px;

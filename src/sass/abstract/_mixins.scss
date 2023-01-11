@@ -1,3 +1,8 @@
+// @use '../index' as *;
+// @use '../base/typography';
+// @forward '../base/typography';
+
+// @import url( '../base/_typography.scss');
 // MEDIA QUERY MANAGER
 /*
 
@@ -13,41 +18,83 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
 @mixin respond($breakpoint) {
-    // Phone-xs
-    @if $breakpoint == phone-xs {
-      @media (max-width: 20em) {
-        @content;
-      } //0 - 320px
-    }
-    // Phone
-    @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
-        @content;
-      } //0 - 600px
-    }
-    // Table small
-    @if $breakpoint == tab-port-sm {
-      @media (max-width: 48em) {
-        @content;
-      } //768px
-    }
-    // Table Portrait
-    @if $breakpoint == tab-port {
-      @media (max-width: 56.25em) {
-        @content;
-      } //900px
-    }
-    // Table Landscape
-    @if $breakpoint == tab-land {
-      @media (max-width: 75em) {
-        @content;
-      } //1200px
-    }
-    // Big Desktop
-    @if $breakpoint == big-desktop {
-      @media (min-width: 112.5em) {
-        @content;
-      } //1800px +
-    }
+  // Phone-xs
+  @if $breakpoint == phone-xs {
+    @media (max-width: 20em) {
+      @content;
+    } //0 - 320px
   }
-  
+  // Phone
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //0 - 600px
+  }
+  // Table small
+  @if $breakpoint == tab-port-sm {
+    @media (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  // Table Landscape
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  // Big Desktop
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px +
+  }
+}
+
+// @mixin circle2($width, $height, $color) {
+//   width: $width;
+//   height: $height;
+//   background: $color;
+// }
+
+// @mixin typography($name) {
+//   @if $name == dt-base-font {
+//     font-size: 25px;
+//     font-weight: $dt-base-weight;
+//     line-height: $dt-base-height;
+//   }
+// }
+
+// @mixin typography_utils($size, $height, $weight) {
+//   font-size: $size;
+//   font-weight: $weight;
+//   line-height: $height;
+// }
+
+@mixin status_utils($v1, $v2, $v3) {
+  background: rgba($v1, $v2, $v3, 0.1);
+  padding: 5px 8px;
+  border-radius: 100px;
+  color: rgba($v1, $v2, $v3, 1);
+}
+
+@mixin status($name) {
+  @if $name == active {
+    @include status_utils(57, 205, 98);
+  }
+
+  @if $name == inactive {
+    @include status_utils(84, 95, 125);
+  }
+  @if $name == pending {
+    @include status_utils(233, 178, 0);
+  }
+  @if $name == blacklist {
+    @include status_utils(228, 3, 59);
+  }
+}
