@@ -1,19 +1,209 @@
 @use '../index' as *;
 
+#user-details {
+  width: 100%;
+  margin-top: 3rem;
+  font-family: $dashbord_font-family;
+  background: #e5e5e53f;
+
+  .user-details_wraper {
+    padding: 2rem 0.5rem;
+
+    .top-nav_back-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: none;
+      background: none;
+    }
+    .top-nav_btn-wraper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+
+      h1 {
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .top-nav_btn {
+        display: flex;
+        gap: 10px;
+
+        button {
+          font-weight: 600;
+          font-size: 10px;
+
+          //   font-size: 14px;
+          //   line-height: 16px;
+          letter-spacing: 0.1em;
+          color: $primary-color;
+          padding: 0.6rem 0.4rem;
+          border: 1px solid #39cdcc;
+          border-radius: 8px;
+          text-transform: uppercase;
+          background: none;
+        }
+        .blacklist_btn {
+          color: $black-list-color;
+          border: 1px solid $black-list-color;
+        }
+      }
+    }
+  }
+  .user-details_info-nav {
+    margin-top: 1rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+
+    .info-nav_wraper {
+      // display: flex;
+      padding: 1rem;
+      padding-bottom: 0.3rem;
+
+      .info-nav_header {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+
+        .avatar_wraper {
+          padding: 1rem;
+          background: rgba(33, 63, 125, 0.16);
+          border-radius: 100%;
+          display: block;
+        }
+        .avatar {
+          width: 1.5rem;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          color: $secondary-color;
+        }
+
+        .info-nav_tier_wraper{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .user_code {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: $secondary-color;
+        }
+        .user_bank {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: $secondary-color;
+        }
+        // height: 1px;
+      }
+      .info-nav_links {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 5px;
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+
+        a,
+        .active-link {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-align: center;
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.8);
+        }
+        .active-link {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 992px) {
-    #user-details {
-      width: calc(80%);
-      margin-left: 20%;
-      height: 100vh;
-   
-      margin-top: 3rem;
-      padding-top: 2rem;
- 
-  background: #e5e5e53f;
-      
-  
-      
-  // }
+  #user-details {
+    width: calc(80%);
+    margin-left: 20%;
+    height: 100vh;
+
+    margin-top: 3rem;
+    // padding-top: 2rem;
+
+    background: #e5e5e53f;
+
+    .user-details_wraper {
+      padding: 5rem 3.5rem;
+
+      .top-nav_btn-wraper {
+        h1 {
+          font-size: 24px;
+        }
+        .top-nav_btn {
+          button {
+            padding: 1rem 1rem;
+            font-size: 14px;
+          }
+        }
+      }
+      .user-details_info-nav {
+        .info-nav_wraper {
+          padding: 1rem 2rem 0;
+          .info-nav_header {
+            // display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 1.5rem;
+
+            .avatar {
+              width: 4.3rem;
+            }
+            h2 {
+              font-size: 22px;
+            }
+            .info-nav_tier_wraper {
+              padding: 1rem;
+              border-left: 1px solid rgba(84, 95, 125, 0.2);
+              border-right: 1px solid rgba(84, 95, 125, 0.2);
+            }
+            // height: 1px;
+          }
+          .info-nav_links {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-top: 2.5rem;
+        padding-bottom: unset;
+
+            // align-items: center;
+            text-align: right;
+
+            a {
+              width: 100%;
+              padding-bottom: 0.5rem;
+            }
+
+            .active-link {
+              border-bottom: 2px solid $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    // }
   }
 }
