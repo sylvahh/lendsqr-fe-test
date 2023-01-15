@@ -1,46 +1,37 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# lendsqr-fe-test
 
-## Available Scripts
+## Overview
+This repository contains the submission of a candidate for a technical assessment. The purpose of this assessment is to evaluate the candidate's skills and abilities in the technologies required for the role they have applied for.
 
-In the project directory, you can run:
+## Contents
+The repository includes the following files and folders:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* `src` : contains the source code for the assessment.
+* `tests`: contains the test cases for the assessment.
+* `README.md`: provides an overview of the repository and instructions for running the code.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instructions 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine using git clone  https://github.com/sylvahh/lendsqr-fe-test.git. 
+2. Navigate to the root directory of the repository using the command line.
+3. Install the required dependencies by running `npm install` or `yarn install`.
+4. Run the tests by executing `npm test` or `yarn test`.
+5. To run the application, execute `npm start` or `yarn start`.</li>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Note
 
-### `npm run eject`
+The assessment was built using Reactjs, Typescript and Scss.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Conclusion
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I hope this submission meets your expectations and demonstrates my capabilities for the role. If you have any questions or concerns, please do not hesitate to reach out. I would be happy to provide additional information or clarification as needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
