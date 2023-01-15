@@ -51,7 +51,13 @@
         margin: auto;
       }
       @media only screen and (min-width: 900px) {
-        margin: 96px 67px auto;
+        // margin: 80px 67px auto;
+        margin-top: 75px;
+        margin-left: 4rem;
+        // .welcome_img_wraper{
+        //   width: fit;
+        // }
+
         text-align: unset;
         .welcome_Img {
           max-width: 600px;
@@ -64,8 +70,13 @@
       width: 100%;
       text-align: center;
 
+
+      
+      
+
  @media only screen and (min-width: 900px) {
       text-align: left;
+        width: 704px;
  }
       h1 {
         font-family: login-font_bold;
