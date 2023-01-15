@@ -7,7 +7,7 @@
   position: absolute;
   right: 1%;
   z-index: 100;
-display: none;
+
   border: 1px solid rgba(84, 95, 125, 0.04);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
@@ -15,21 +15,18 @@ display: none;
   margin: 10px auto;
 
   .table-options_wraper {
-    // background: rgb(29, 28, 28) !important;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     gap: 1rem;
     padding: 1rem 0.1rem;
 
     .options {
       display: flex;
-justify-content: center;
+      justify-content: center;
       align-items: center;
 
       gap: 10px;
 
-      // width: 100%;
       text-transform: capitalize;
 
       span {
@@ -42,7 +39,7 @@ justify-content: center;
     }
   }
 }
-.open_options{
+.open_options {
   display: block;
   width: 1000px;
 }

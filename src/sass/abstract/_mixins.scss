@@ -1,9 +1,4 @@
-// @use '../index' as *;
-// @use '../base/typography';
-// @forward '../base/typography';
 
-// @import url( '../base/_typography.scss');
-// MEDIA QUERY MANAGER
 /*
 
 0 - 600px:          Phone
@@ -56,25 +51,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   }
 }
 
-// @mixin circle2($width, $height, $color) {
-//   width: $width;
-//   height: $height;
-//   background: $color;
-// }
-
-// @mixin typography($name) {
-//   @if $name == dt-base-font {
-//     font-size: 25px;
-//     font-weight: $dt-base-weight;
-//     line-height: $dt-base-height;
-//   }
-// }
-
-// @mixin typography_utils($size, $height, $weight) {
-//   font-size: $size;
-//   font-weight: $weight;
-//   line-height: $height;
-// }
 
 @mixin status_utils($v1, $v2, $v3) {
   background: rgba($v1, $v2, $v3, 0.1);

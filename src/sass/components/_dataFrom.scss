@@ -4,12 +4,11 @@
   font-family: $dashbord_font-family;
   width: calc(75%);
   height: calc(100%);
-  display: none;
 
   box-sizing: border-box;
-  //   float: left;
+  float: left;
   position: absolute;
-  top: 25%;
+  top: 10%;
   padding: 1rem 0.8rem;
   background: rgb(255, 255, 255);
   border: 1px solid rgba(84, 95, 125, 0.14);
@@ -58,14 +57,14 @@
 
       .data-form_btn {
         display: flex;
-        // width: 100%;
+        width: 100%;
         justify-content: space-between;
         button {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            
-          // width: 75%;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+
+          width: 75%;
           color: white;
           padding: 0.8rem 2rem;
           border: 1px solid #39cdcc;
@@ -82,11 +81,9 @@
       }
     }
   }
-  
 }
 
-  /* width */
-  #data-form::-webkit-scrollbar {
-    width: 0px;
-  }
-  
+/* width */
+#data-form::-webkit-scrollbar {
+  width: 0px;
+}

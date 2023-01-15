@@ -8,13 +8,7 @@ border: 1px solid rgba(33, 63, 125, 0.06);
 box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
 border-radius: 4px;
 box-sizing: border-box;
-//   $ud_info_headers-size: $sb-font-size; // user info headers
-// $ud_info_headers-weight: $hero-font-weight;
-// $ud_info_headers-height: $sb-font-height;
 
-// $ud_info_base-size: $dt-header-size; // base text for user details information
-// $ud_info_base-weight: $dt-base-weight;
-// $ud_info_base-height: $dt-header-height;
 
   .user-info_wraper {
     padding: 2rem 1rem;
@@ -25,10 +19,9 @@ box-sizing: border-box;
       font-size: $ud_info_headers-size;
       line-height: $ud_info_headers-height;
     }
-    .user-info_section-wraper{
+    .user-info_section-wraper, .user-info_section-wraper_g2{
         color: $dt-text-color;
         display: flex;
-        // justify-content: space-between;
         flex-wrap: wrap;
         margin: 1rem 0;
         column-gap: 2rem;
@@ -47,8 +40,10 @@ box-sizing: border-box;
             line-height: $ud_info_headers-height;
             
             text-transform: capitalize;
-            // color: #545F7D;
         }
+    }
+    .user-info_section-wraper_g2{
+        margin-top: 3rem;
     }
     hr {
        border: 1px solid rgba(33, 63, 125, 0.1);
@@ -62,12 +57,15 @@ box-sizing: border-box;
   #user-info {
 
     .user-info_wraper{
-        padding: 2rem;
+        padding: 30px;
 
-        .user-info_section-wraper{
-            // justify-content: space-between;
-            row-gap: 2rem;
+        .user-info_section-wraper, .user-info_section-wraper_g2 {
+            row-gap: 71px;
             column-gap: 5rem;
+        }
+        .user-info_section-wraper_g2{
+            align-items: stretch;
+            margin-top: 5rem;
         }
     }
   }

@@ -1,6 +1,4 @@
-// @charset "UTF-8";
-// @use './sass/components/'
-// @use './sass/index' as *;
+
 @use './sass/abstract/mixins';
 @use './sass/layout/loginPage';
 @use './sass/components/dashboardheader';
@@ -18,26 +16,3 @@
 }
 
 
-// body{
-//   background: #e5e5e53f;
-// box-sizing: border-box;
-// }
-
-// .app{
-//     position: relative;
-// }
-// @use './sass/layout/dasboardHeader'
-// @use './sass/abstract/variables';
-
-// @use url('./sass/abstract/_variables.scss');
-// @use url('./sass/base/_typography.scss');
-// @use url('./sass/components/');
-// @use url('./sass/layout/_loginPage.scss');
-// @import url('./sass/sections/');
-// @import url('./sass/vendor/');
-
-// $maincolor : variables.$primary-color;
-
-// body{
-//   background-color: $maincolor;
-// }

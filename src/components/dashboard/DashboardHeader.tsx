@@ -1,16 +1,15 @@
 import React from 'react';
-import logo from '../assets/Union.png';
-import logoText from '../assets/lendsqr.svg';
-import notification from '../assets/notification.png';
-import userPhoto from '../assets/image 4.png';
-import searchIcon from '../assets/search-icon.svg';
-import dropdownBtn from '../assets/Vector-option.png';
-import menuIcon from '../assets/menu.svg';
-import { toggler } from './utilities';
+import logo from '../../assets/Union.png';
+import logoText from '../../assets/lendsqr.svg';
+import notification from '../../assets/notification.png';
+import userPhoto from '../../assets/image 4.png';
+import searchIcon from '../../assets/search-icon.svg';
+import dropdownBtn from '../../assets/Vector-option.png';
+import menuIcon from '../../assets/menu.svg';
+import { toggler } from '../utilities';
 
 const DashboardHeader = () => {
   return (
-    // <header>
     <div id='dashboard_header'>
       <div className='header_wraper'>
         <div className='header_logo_Wraper'>
@@ -40,7 +39,6 @@ const DashboardHeader = () => {
         </div>
       </div>
     </div>
-    // </header>
   );
 };
 

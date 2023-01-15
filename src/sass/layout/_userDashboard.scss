@@ -5,59 +5,21 @@
   #dashboard_body {
     width: calc(80%);
     margin-left: 20%;
-    height: 100vh;
-    // position: relative;
-    //   padding: 1.5rem 3rem;
+
     margin-top: 3rem;
     padding-top: 2rem;
-    // padding-left: 3rem;
-    /* z-index: 10; */
-    /* background-image: url(assets/bg-dark5.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
-// .dashboard_content{
-    
-
-    
-// }
-}
-// .card_wraper {
-//     width: 100%;
-//     padding: 1.5rem 2rem;
-//     border: 1px solid rgba(33, 63, 125, 0.06);
-//     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
-//     border-radius: 4px;
-//     background: rgb(255, 255, 255);
-
-//     // .icon_wraper1,
-//     // .icon_wraper2,
-//     // .icon_wraper3,
-//     // .icon_wraper4 {
-//     //   // background: #e018ff28;
-//     //   // opacity: 0.1;
-//     //   padding: 0.5rem;
-
-//     //   width: 25px;
-//     //   height: auto;
-//     //   border-radius: 100%;
-//     // }
-// }
+  }
 }
 
 #dashboard_body {
   background: #e5e5e53f;
-  // width: 100%;
   font-family: $dashbord_font-family;
-color: $dt-text-color;
+  color: $dt-text-color;
   .dashboard_content {
     padding: 0.5rem;
     @media (min-width: 992px) {
-        padding: 0.5rem 3.5rem;
+      padding: 0.5rem 3.5rem;
     }
-
-    
 
     h1 {
       font-size: $hero-font-size;
@@ -72,10 +34,9 @@ color: $dt-text-color;
       gap: 20px;
       margin-top: 3rem;
       overflow: auto;
-      // justify-content: space-between;
     }
     .card_wraper {
-        text-align: center;
+      text-align: center;
       width: 100%;
       padding: 0.5rem 2rem;
       border: 1px solid rgba(33, 63, 125, 0.06);
@@ -90,8 +51,6 @@ color: $dt-text-color;
       .icon_wraper2,
       .icon_wraper3,
       .icon_wraper4 {
-        // background: #e018ff28;
-        // opacity: 0.1;
         padding: 0.5rem;
 
         width: 25px;
@@ -116,35 +75,16 @@ color: $dt-text-color;
         font-size: 12px;
         line-height: auto;
         text-transform: uppercase;
-        margin-top: 1rem ;
+        margin-top: 1rem;
         margin-bottom: 0.1rem;
-       
+
         @media (min-width: 992px) {
-            font-size: 14px;
-            line-height: 16px;
-            margin-top: 1rem ;
-            margin-bottom: 0.5rem;  
+          font-size: 14px;
+          line-height: 16px;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
         }
       }
     }
   }
 }
-
-// #dashboard_header {
-//     display: flex;
-
-//     .header_logo_wraper {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 10px;
-
-//       .header_logo {
-//         height: 20.84px;
-//         width: 20.63px;
-//       }
-//     }
-//   }
-
-// #dashboard{
-//  font-size: 4rem;
-// }
