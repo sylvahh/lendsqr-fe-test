@@ -58,7 +58,7 @@ const DataTable: React.FC = () => {
   };
 
   useEffect(() => {
-    const storedUsers = localStorage.getItem('userData');
+    const storedUsers = localStorage.getItem('usersData');
     if (storedUsers) {
       setUsers(JSON.parse(storedUsers));
       setFilteredUsers(JSON.parse(storedUsers));
