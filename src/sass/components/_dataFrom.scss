@@ -3,10 +3,10 @@
 #data-form {
   font-family: $dashbord_font-family;
   width: calc(75%);
-  height: calc(100%);
+  // height: calc(100%);
 
   box-sizing: border-box;
-  float: left;
+  //   float: left;
   position: absolute;
   top: 10%;
   padding: 1rem 0.8rem;
@@ -15,13 +15,15 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   overflow: auto;
-  z-index: 100;
+  z-index: 10;
 
   @media only screen and (min-width: 900px) {
     width: calc(25%);
+    // background: #000;
   }
 
   .data-form_wraper {
+   
     form {
       display: flex;
       flex-direction: column;
@@ -57,14 +59,14 @@
 
       .data-form_btn {
         display: flex;
-        width: 100%;
+        // width: 100%;
         justify-content: space-between;
         button {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 16px;
-
-          width: 75%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            
+          // width: 75%;
           color: white;
           padding: 0.8rem 2rem;
           border: 1px solid #39cdcc;
@@ -81,9 +83,11 @@
       }
     }
   }
+  
 }
 
-/* width */
-#data-form::-webkit-scrollbar {
-  width: 0px;
-}
+  /* width */
+  #data-form::-webkit-scrollbar {
+    width: 0px;
+  }
+  
