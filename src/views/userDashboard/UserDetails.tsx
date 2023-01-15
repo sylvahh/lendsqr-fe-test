@@ -2,14 +2,13 @@ import React, { Fragment, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DashboardHeader from '../../components/dashboard/DashboardHeader';
 import backIcon from '../../assets/back-icon.svg';
-import avatar from '../../assets/avatar.svg';
 import star from '../../assets/starIcon.svg';
 import UserInfo from '../../components/dashboard/UserInfo';
-import { assignBank, generateAccountNumber } from '../../components/utilities';
+import { assignBank, generateAccountNumber, IUser } from '../../components/utilities';
 
 const UserDetails = () => {
 
-  const [userDetails, setUserDetails] = useState()
+  const [userDetails, setUserDetails] = useState<IUser> ()
   
 
   useEffect(() => {

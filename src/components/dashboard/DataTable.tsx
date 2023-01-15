@@ -2,15 +2,11 @@ import React, { useEffect, useState } from 'react';
 import filterIcon from '../../assets/filter-button.png';
 
 import optionIcon from '../../assets/options.svg';
-import nextbtn from '../../assets/next btn.png';
-import prevbtn from '../../assets/prev btn.png';
 import DataForm from './DataForm';
 import TableOptions from './TableOptions';
 import {
   convertDateString,
-  DataProps,
-  IUser,
-  toggler,
+  
   truncateString,
   paginate,
   addStatusClass,
@@ -156,7 +152,6 @@ const DataTable: React.FC = () => {
           <tbody>
             {paginatedData !== null &&
               paginatedData[currentPage].map((user, index) => {
-
                 const status = addStatusClass(user.id);
                 return (
                   <tr className='table_data' key={index}>

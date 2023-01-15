@@ -93,7 +93,7 @@ export const paginate =(data: any[], dataPerPage: number): any[][] | null => {
   return paginatedData;
 }
 
-export const assignBank = (userId: string): string | undefined => {
+export const assignBank = (userId: number): string | undefined => {
   const banks = ['Access Bank', 'Kuda Bank', 'Providus Bank'];
   const randomIndex = Math.floor(Math.random() * banks.length);
   const bankName = banks[randomIndex];
