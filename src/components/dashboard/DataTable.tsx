@@ -39,7 +39,7 @@ const DataTable: React.FC = () => {
     status: '',
   });
 
-  const paginatedData = paginate(filteredUsers, dataPerPage);
+  const paginatedData = filteredUsers.length > 0 ? paginate(filteredUsers, dataPerPage): null;
 
   const handleOptionButtonClick = (index: number) => {
     if (openOptionIdx === index) {
@@ -111,7 +111,7 @@ const DataTable: React.FC = () => {
             <tr>
               <th>
                 organization{' '}
-                <button onClick={() => setShowForm(true)}>
+                <button onClick={() => setShowForm(!showForm)}>
                   <img src={filterIcon} alt='filter_icon' />
                 </button>
               </th>
@@ -195,7 +195,7 @@ const DataTable: React.FC = () => {
         dataPerPage={dataPerPage}
         setDataPerPage={setDataPerPage}
         paginatedData={paginatedData}
-        currentPageProp={currentPage}
+        // CurrentPageProp={currentPage}
       />
     </div>
   );
