@@ -5,7 +5,7 @@ import viewIcon from '../../assets/view-opt.svg';
 import activateIcon from '../../assets/activate-opt.svg';
 import { fetchUser } from '../utilities';
 
-export let userID = undefined;
+// export let userID = undefined;
 const userApi = 'https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users';
 
 const TableOptions = (props: any) => {

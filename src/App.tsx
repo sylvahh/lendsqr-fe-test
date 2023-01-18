@@ -5,7 +5,6 @@ import Login from './views/login/Login';
 import UserDashboard from './views/userDashboard/UserDashboard';
 import Sidebar from './components/sidebar/Sidebar';
 import UserDetails from './views/userDashboard/UserDetails';
-import { DataProps, IUser } from './components/utilities';
 
    
 
@@ -15,9 +14,6 @@ import { DataProps, IUser } from './components/utilities';
 function App() {
 
 
-  useEffect(() => {
-   
-  }, [])
   
 
   return (
