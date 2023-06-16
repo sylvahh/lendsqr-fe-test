@@ -1,5 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { IUser } from '../utilities';
+// import { IUser } from '../utilities';
+
+export interface IUser {
+  createdAt: string,
+  orgName: string,
+  userName: string,
+  email: string,
+  phoneNumber: string,
+  lastActiveDate: string,
+  profile: any[string],
+  guarantor: any[string],
+  accountBalance: string,
+  accountNumber: string,
+  socials: any,
+  education: any,
+  id : number
+}
 
 const UserInfo = () => {
   const [userInfo, setUserInfo] = useState<IUser>()

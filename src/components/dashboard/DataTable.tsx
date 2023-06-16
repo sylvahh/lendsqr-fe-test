@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import filterIcon from '../../assets/filter-button.png';
 
 import optionIcon from '../../assets/options.svg';
 import DataForm from './DataForm';
 import TableOptions from './TableOptions';
-import {
-  convertDateString,
-  
-  truncateString,
-  paginate,
-  addStatusClass,
-} from '../utilities';
+import { convertDateString, truncateString, paginate, addStatusClass } from '../utilities';
 import Pagination from './Pagination';
 
 export interface User {
@@ -39,7 +33,7 @@ const DataTable: React.FC = () => {
     status: '',
   });
 
-  const paginatedData = filteredUsers.length > 0 ? paginate(filteredUsers, dataPerPage): null;
+  const paginatedData = filteredUsers.length > 0 ? paginate(filteredUsers, dataPerPage) : null;
 
   const handleOptionButtonClick = (index: number) => {
     if (openOptionIdx === index) {
@@ -49,9 +43,9 @@ const DataTable: React.FC = () => {
     }
   };
 
-  const handleAmountChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setDataPerPage(Number(event.target.value));
-  };
+  // const handleAmountChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  //   setDataPerPage(Number(event.target.value));
+  // };
 
   useEffect(() => {
     const storedUsers = localStorage.getItem('usersData');
@@ -63,6 +57,7 @@ const DataTable: React.FC = () => {
       );
     }
   }, []);
+  console.log(1);
 
   const handleFilter = (formData: any) => {
     const filtered = users.filter((user) => {
@@ -77,7 +72,6 @@ const DataTable: React.FC = () => {
       );
     });
     setFilteredUsers(filtered);
-    console.log(filtered);
   };
 
   const handleReset = () => {
@@ -92,7 +86,7 @@ const DataTable: React.FC = () => {
     setFilteredUsers(users);
   };
 
-  console.log(currentPage);
+  // console.log(currentPage);
   return (
     <div id='data_table'>
       <div className='table_wraper'>
@@ -135,7 +129,7 @@ const DataTable: React.FC = () => {
                 </button>
               </th>
               <th>
-                createdAt joined{' '}
+                Date joined{' '}
                 <button onClick={() => setShowForm(!showForm)}>
                   <img src={filterIcon} alt='filter_icon' />
                 </button>
@@ -162,10 +156,10 @@ const DataTable: React.FC = () => {
                       <button>{user.userName}</button>
                     </td>
                     <td>
-                      <button>{user.email}</button>
+                      <button>{truncateString(user.email, 15)}</button>
                     </td>
                     <td>
-                      <button>{user.phoneNumber}</button>
+                      <button>{truncateString(user.phoneNumber, 15)}</button>
                     </td>
                     <td>
                       <button>{convertDateString(user.createdAt)}</button>
@@ -201,4 +195,4 @@ const DataTable: React.FC = () => {
   );
 };
 
-export default DataTable;
+export default memo(DataTable);

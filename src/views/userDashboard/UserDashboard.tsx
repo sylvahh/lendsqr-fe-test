@@ -9,7 +9,7 @@ const UserDashboard = ( )  => {
   return (
     <>
       <DashboardHeader />
-      <div id='dashboard_body'>
+      <div id='dashboard_body' >
         <div className='dashboard_content'>
           <h1>Users</h1>
           <div className='users_card'>

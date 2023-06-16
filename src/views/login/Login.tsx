@@ -28,10 +28,10 @@ const Login = () => {
           <span>Enter details to login.</span>
           <form action=''>
             <div>
-              <input type='text' placeholder='Email' />
+              <input name='email' type='text' placeholder='Email' />
             </div>
             <div className='form_password'>
-              <input type='password' placeholder='Password' />
+              <input name='password' type='password' placeholder='Password' />
               <button className='showPassbtn'>SHOW</button>
             </div>
             <button className='reset_password'>forgot password ?</button>

@@ -1,18 +1,11 @@
 @use '../index' as *;
 
-
-
- 
-
 #dashboard_header {
-  margin: 0 auto ;
-  // display: flex;
-  // width: 100%;
-  // max-width: 1300px;
+  margin: 0 auto;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   font-family: $dashbord_font-family;
 
-  position:fixed;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -23,14 +16,12 @@
   .header_wraper {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
-padding: 0.5rem;
+    padding: 0.5rem;
 
-@media only screen and (min-width: 900px) {
-padding: 0.5rem 2rem;
-
-}
+    @media only screen and (min-width: 900px) {
+      padding: 0.5rem 2rem;
+    }
 
     .header_logo_Wraper {
       display: flex;
@@ -51,28 +42,22 @@ padding: 0.5rem 2rem;
       @media only screen and (min-width: 900px) {
         display: block;
         width: 115.37px;
-
       }
     }
 
-    .header_menu_logo{
+    .header_menu_logo {
       border: none;
       background: none;
-      // height: 20.84px;
       @media only screen and (min-width: 900px) {
         display: none;
-  
       }
     }
-    .header_menu_logo img{
+    .header_menu_logo img {
       height: 17px;
     }
-    
+
     .search_bar {
       display: none;
-      // justify-content: start;
-      // flex-shrink: inherit;
-
       background: #ffffff;
       text-align: left;
       width: 100%;
@@ -102,7 +87,6 @@ padding: 0.5rem 2rem;
       button {
         background: $primary-color;
         border: none;
-        // padding: auto 15px;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
         cursor: pointer;
@@ -113,9 +97,8 @@ padding: 0.5rem 2rem;
     }
     .header_utilities {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
-      // text-align: left;
       gap: 0.5rem;
       width: 100%;
       @media only screen and (min-width: 900px) {
@@ -123,7 +106,6 @@ padding: 0.5rem 2rem;
       }
       a {
         display: none;
-        // font-family: $roboto_font-family;
         text-align: left;
         font-weight: 400;
         font-size: 16px;
@@ -135,7 +117,6 @@ padding: 0.5rem 2rem;
       }
       .notification {
         display: block;
-        // height: 10px;
       }
       .user_img_wraper {
         display: flex;

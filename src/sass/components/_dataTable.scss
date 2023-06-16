@@ -5,167 +5,140 @@
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
-  // overflow: scroll !important;
   height: 640px;
-// z-index: -10;
   overflow: auto;
-
-
   position: relative;
-  // top: 0;
-
   font-family: $dashbord_font-family;
   color: $dt-text-color;
   margin-top: 1.8rem;
   margin-bottom: 3rem;
   padding: 1.5rem;
 
-  
-  .table_wraper{
-
-      table {
-
-        
-        width: 1037px;
-        border-collapse: collapse;
-        
-        @media only screen and (min-width: 900px) {
-          width: 100%;
-        }
-
-        th {
-          text-align: justify;
-    
-          font-size: $dt-header-size;
-          font-weight: $dt-header-weight;
-          line-height: $dt-header-height;
-          text-transform: capitalize;
-    
-          button {
-            border: none;
-            background: none;
-            cursor: pointer;
-    
-            img {
-              vertical-align: sub;
-              height: 16px;
-              width: 16px;
-            }
-          }
-        }
-    
-        tr {
-            position: relative;
-        }
-     
-        td {
-    
-         
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          font-size: $dt-base-size;
-          font-weight: $dt-base-weight;
-          line-height: $dt-base-height;
-          cursor: pointer;
-          border-bottom: 1px solid rgba(33, 63, 125, 0.1);
-    
-          button {
-            color: $dt-text-color;
-            border: none;
-            background: none;
-            cursor: pointer;
-          }
-        }
-        .status_active {
-          @include status(active);
-        }
-    
-        .status_inactive {
-          @include status(inactive);
-        }
-    
-        .status_pending {
-          @include status(pending);
-        }
-        .status_blacklist {
-          @include status(blacklist);
-        }
-    
-       
-        .option_btn{
-    
-            img {
-                vertical-align: sub;
-                height: 16px;
-                width: 16px;
-              }
-        }
-    
-    
-       
-        }
-  }
-    .td_pigment{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-
+  .table_wraper {
+    table {
+      width: 1037px;
+      border-collapse: collapse;
+      @media only screen and (min-width: 900px) {
         width: 100%;
+      }
 
-       .td_pigment_showing{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
+      th {
+        text-align: start;
+        font-size: $dt-header-size;
+        font-weight: $dt-header-weight;
+        line-height: $dt-header-height;
+        text-transform: uppercase;
 
-          @media only screen and (min-width: 900px) {
-         
-          flex-direction: row;
-          gap: 10px;
-          }
-        }
-
-        .td_pigment_pages{
-          display: flex;
-          justify-content: end;
-          align-items: center;
-          gap: 5px;
-          width: 100%;
-         
-
-          @media only screen and (min-width: 900px) {
-            gap: 10px;
-          }
-        }
-        span {
-          
-        }
-
-        select {
-            padding: 2px ;
-            border: none;
-            border-radius: 4px;
-            background: rgba(33, 63, 125, 0.1);
-
-            @media only screen and (min-width: 900px) {
-              padding: 5px 8px;
-            }
-
-        }
         button {
-            border: none;
-            border-radius: 4px;
-            background: rgba(33, 63, 125, 0.1);
-             padding: 5px 8px;
+          border: none;
+          background: none;
+          cursor: pointer;
 
-             @media only screen and (min-width: 900px) {
-            }
+          img {
+            vertical-align: sub;
+            height: 16px;
+            width: 16px;
+          }
         }
+      }
+
+      tr {
+        position: relative;
+      }
+
+      td {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: $dt-base-size;
+        font-weight: $dt-base-weight;
+        line-height: $dt-base-height;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+
+        button {
+          color: $dt-text-color;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+      }
+      .status_active {
+        @include status(active);
+      }
+
+      .status_inactive {
+        @include status(inactive);
+      }
+
+      .status_pending {
+        @include status(pending);
+      }
+      .status_blacklist {
+        @include status(blacklist);
+      }
+
+      .option_btn {
+        img {
+          vertical-align: sub;
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+  .td_pigment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    width: 100%;
+
+    .td_pigment_showing {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      @media only screen and (min-width: 900px) {
+        flex-direction: row;
+        gap: 10px;
+      }
     }
 
- 
+    .td_pigment_pages {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+
+      @media only screen and (min-width: 900px) {
+        gap: 10px;
+      }
+    }
+  
+    select {
+      padding: 2px;
+      border: none;
+      border-radius: 4px;
+      background: rgba(33, 63, 125, 0.1);
+
+      @media only screen and (min-width: 900px) {
+        padding: 5px 8px;
+      }
+    }
+    button {
+      border: none;
+      border-radius: 4px;
+      background: rgba(33, 63, 125, 0.1);
+      padding: 5px 8px;
+
+      @media only screen and (min-width: 900px) {
+      }
+    }
+  }
 }
 
 #data_table::-webkit-scrollbar {
